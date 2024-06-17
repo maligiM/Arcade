@@ -10,8 +10,7 @@ public class Jeopardy extends Game implements ActionListener {
 	private static final long serialVersionUID = 1L;
 	static int currentPlayer;
 	JButton[] buttons;
-	private JLabel display;
-	JPanel playerPanel, boardPanel;
+	JPanel boardPanel;
 	QuestionList qs = new QuestionList();
 	Player player1;
 	Player player2;
@@ -21,7 +20,6 @@ public class Jeopardy extends Game implements ActionListener {
 		player1 = p1;
 		player2 = p2;
 		currentPlayer = 1;
-		playerPanel = new JPanel();
 		boardPanel = new JPanel(new GridLayout(4, 5, 1, 1));
 		boardPanel.setPreferredSize(new Dimension(700, 700));
 		boardPanel.setBackground(Color.GREEN);

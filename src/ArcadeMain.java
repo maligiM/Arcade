@@ -76,7 +76,7 @@ public class ArcadeMain extends JFrame implements ActionListener {
 			boardPanel.removeAll();
 			buttons[0].setEnabled(true);
 			buttons[1].setEnabled(false);
-			buttons[1].setEnabled(false);
+			buttons[2].setEnabled(true);
 			player1.reset();
 			player2.reset();
 			add(boardPanel);
