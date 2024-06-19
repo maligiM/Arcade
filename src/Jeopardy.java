@@ -32,7 +32,7 @@ public class Jeopardy extends Game implements ActionListener {
 			String text = qs.questions[i].category + " :$" + qs.questions[i].points;
 			JButton button = new JButton(text);
 			button.setName(String.valueOf(i));
-			button.setFont(new Font("Arial", Font.BOLD, 11));
+			button.setFont(new Font("Calibri", Font.BOLD, 11));
 			button.addActionListener(this);
 			buttons[i] = button;
 			boardPanel.add(button);
